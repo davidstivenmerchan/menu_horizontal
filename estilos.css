@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --color1 :rgb(25, 192, 254);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+nav{
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+nav ul li{
+    display: flex;
+    list-style: none;
+    margin: 0px 20px;
+    height: 50px;
+    align-items: center;
+    padding: 0px 5px;
+    transition: 0.5s;
+}
+nav ul{
+    display: flex;
+    
+}
+nav{
+    display: flex;
+}
+nav img{
+    width: 50px;
+}
+nav .icono{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .icono{
+    display: none;
+}
+nav ul li:hover{
+    background: var(--color1);
+    cursor: pointer;
+}
+
+nav .icono:hover{
+    color: var(--color1);
+
+}
+.icono2{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+/* ------------------- menu escondido1 --------------------- */
+.menu2{
+    background: black;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin:0px 0px auto auto;
+    display: none;
+    
+}
+.menu2 ul li{
+    list-style: none;
+    margin: 10px 0px;
+
+}
+.menu2-aparecer{
+    display: flex;
+}
+
+
+/* ------------------- menu escondido2 --------------------- */
+.menu3{
+    background: black;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.menu3 ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+
+
+
+
+@media screen and (max-width:860px){
+    nav ul:nth-child(3){
+        display: none;
+    }
+    nav .icono{
+        display: flex;
+    }
+
+
+}
+
+@media screen and (max-width:435px){
+    nav ul{
+       display: none;
+    }
+    nav .icono{
+        display: none;
+    }
+    .icono2{
+        display: flex;
+    }
+    .menu3{
+        display: flex;
+    }
+    .menu3-desaparecer{
+        display: none;
+    }
+
+
+}
